@@ -8,6 +8,7 @@ body {
 	height: 650px;
 	background-color: #000000;
 	margin-top: 0;
+	display: block;
 }
 
 #message{
@@ -26,6 +27,7 @@ body {
 	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: 0px;
 	padding: 0px;
+	display: block;
 }
 
 #wel-message{
