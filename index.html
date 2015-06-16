@@ -5,8 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>BITSMUN Goa</title>
+	<link rel="shortcut icon" href="imageresources/favicon.ico">
 	<link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="indexcss.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -28,6 +30,7 @@
             	<ul class="nav navbar-nav navbar-right">
             		<li><a class="page-scroll" style="color: #FFFFFF"  href="#">Home</a></li>
             		<li><a class="page-scroll" style="color: #FFFFFF" href="#">About</a></li>
+            		<li><a class="page-scroll" style="color: #FFFFFF" href="#contact-us">Contact Us</a></li>
             		<li><a class="page-scroll" style="color: #FFFFFF" href="#">REGISTER</a></li>
             		<li><a></a></li>
             	</ul>
@@ -94,15 +97,71 @@ BITSMUN 2015<br><br><br><br>
 		</div>
 	</section>	
 
-	<section id="footer">
-		<div class="conatainer">
-			<div class="content row">
-				<div class=" col-lg-12">
-					<p id="copyright-text">copyright @BITSMUN 2016</p>
+	<!-- Contact us container -->
+	<a name="contact-us"></a>
+	<section id="contact-us">
+	<div class="container-fluid banner-blue-bg">
+		<h1 id="contact-us-heading"> CONTACT US </h1>
+		<div class="col-md-2"></div>
+		<div id ="contact-form" class="col-md-8 text-center">
+			<form method="POST" action="#" onsubmit="alert('Thank You for contacting us.\nWe will get back to you shortly.');" class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="contact-name" class="col-sm-2 control-label">Name</label>
+					<div class="col-sm-10">
+						<input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name" required="">
+					</div>
 				</div>
+				<div class="form-group">
+					<label for="contact-number" class="col-sm-2 control-label">Mobile</label>
+					<div class="col-sm-10">
+						<input type="phone" name="phone" class="form-control" id="contact-number" placeholder="Mobile / Phone Number" required="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-email" class="col-sm-2 control-label">Email</label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="contact-email" placeholder="Email" required="">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="contact-message" class="col-sm-2 control-label">Message/Query<br></label>
+					<div class="col-sm-10">
+						<textarea class="form-control" name="message" rows="3" id="contact-message" placeholder="Enter your query" required=""></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-12">
+						<button type="submit" class="btn ">Submit</button>
+					</div>
+				</div>
+                </form>
+		</div>		
+		<div class="col-md-2"></div>
+	</div>
+</section>
+
+	<!-- Address -->
+	<div class="container-fluid address-wood-bg">
+		<div class="col-md-12 reponsive-center">
+			<h4 id="address-heading">Headquarters</h4>
+			<div>
+				BITS Pilani - K K Birla Goa Campus<br>
+				Zuarinagar,<br>
+				Goa<br>
+				Pin - 403726<br><br>
+				<i class='fa fa-phone'> +91-8412899224</i><br>
+				<i class='fa fa-envelope'><a href='mailto:info@bitsmun.in'>info@bitsmun.in</a></i><br>
 			</div>
 		</div>
-	</section>
+		<div class="col-md-9"></div>
+	</div>
+	<!-- Footer -->
+	<div class="container-fluid footer">
+		<div class="col-md-4 footer-text"><h5></h5></div>
+		<div class="col-md-4" ><img id="footer-quark-logo" src="imageresources/quark-logo.jpg"></div>
+		<div class="col-md-4 footer-text"><h5>&#169 BITSMUN 2015. All Rights Reserved.</h5></div>
+		
+	</div>
 	
 </body>
 
