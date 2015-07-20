@@ -39,6 +39,9 @@
     <!-- for jQuery -->
     <script src="js/jquery.js"></script>
 
+    <!-- jquery plugin -->
+    <script src="js/jquery.contenthover.js"></script>
+
     <!-- /*<style type="text/css">
 	    
     </style>*/
@@ -46,9 +49,36 @@
     <script type="text/javascript">
     	$(document).ready(function() {
     		
-    		alert($('.sadie-first').width() + " --> " + $('.sadie').height());
+    		alert($('.about-box').width() + " --> " + $('.about-box').height());
+
+    	// 	$('.about-box').on('mouseover',function() {
+
+
+
+    	// 		var img = $(this).children('img');
+    	// 		img.animate({
+    	// 			'bottom':'25px'
+    	// 		}, 200, function() {
+
+    	// 			$('.about-box').unbind('mouseover.about-box');
+					// $('.about-box').on('mouseout',function() {
+	    // 			var img = $(this).children('img');
+	    // 			img.animate({
+	    // 				'bottom':'0px'
+	    // 			}, 200);
+	    // 			$('.about-box').bind('mouseover.about-box');
+    	// 	});
+
+    	// 		});
+    	// 	});
+
+    		$('.about-box').contenthover({
+			    hover_class:'about-hover'
+			});
 
     	});
+
+
     </script>
 
 </head>
@@ -87,7 +117,7 @@
                         <a class="page-scroll" href="#services">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Contact Us</a>
+                        <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Register</a>
@@ -153,60 +183,42 @@ BITSMUN 2016
 
 	<!-- about section -->
 	<section id="about" class="bg-light-gray">
-		<div class="container" id="about-container">
-			<h1 class="text-center">About</h1><br>
-			<div class="grid-about col-lg-12 col-md-12">
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath-first">
-						<img src="imageresources/c2.png" alt="img23"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>Model United Nations</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath">
-						<img src="imageresources/c2.png" alt="img24"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>BITSMUN</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath">
-						<img src="imageresources/c2.png" alt="img24"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>GOA</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath-first">
-						<img src="imageresources/c2.png" alt="img24"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>Secretary General's Address</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath">
-						<img src="imageresources/c2.png" alt="img24"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>FAQs and Policies</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
-					<figure class="effect-goliath col-lg-4 col-md-4 goliath">
-						<img src="imageresources/c2.png" alt="img24"/>
-						<figcaption>
-							<!-- <h2>Thoughtful <span>Goliath</span></h2> -->
-							<p>MUN Planet</p>
-							<a href="#">View more</a>
-						</figcaption>			
-					</figure>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1>About</h1><br>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="about-box">
+						<img src="imageresources/about/1.jpg">
+					</div>
+					<div class="contenthover">
+					    <h3>Lorem ipsum dolor</h3>
+					    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+					    <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-box">
+						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about-box">
+						
+					</div>
+				</div>
+			</div>
+			
 		</div>
-		</section>
+
+
+
+
+
+	</section>
 
 
 
@@ -216,13 +228,51 @@ BITSMUN 2016
 				<h1 class="text-center">Committees</h1>
 				<div class="grid-comm">
 					<figure class="effect-zoe">
-						<img src="imageresources/a1.jpg" alt="img25"/>
+						<img src="imageresources/comm/unhrc.jpg" alt="img25"/>
+						<figcaption>
+							<h3>united nations human rights commission</h3>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+							</p>
+							<!-- <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p> -->
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="imageresources/comm/disec.jpg" alt="img26"/>
+						<figcaption>
+							<h3>Disarmament and International Security</h3>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+							</p>
+							<!-- <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p> -->
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="imageresources/comm/nato.jpg" alt="img26"/>
+						<figcaption>
+							<h3>North Atlantic Treaty Organization </h3>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+							</p>
+							<!-- <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p> -->
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="imageresources/comm/unep.jpg" alt="img26"/>
+						<figcaption>
+							<h3>united nations environment prog.</h3>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+							</p>
+							<!-- <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p> -->
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="imageresources/a1.jpg" alt="img26"/>
 						<figcaption>
 							<h2>Creative <span>Zoe</span></h2>
 							<p class="icon-links">
 								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
 							</p>
 							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
 						</figcaption>			
@@ -233,56 +283,6 @@ BITSMUN 2016
 							<h2>Creative <span>Zoe</span></h2>
 							<p class="icon-links">
 								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
-							</p>
-							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
-						</figcaption>			
-					</figure>
-					<figure class="effect-zoe">
-						<img src="imageresources/a1.jpg" alt="img26"/>
-						<figcaption>
-							<h2>Creative <span>Zoe</span></h2>
-							<p class="icon-links">
-								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
-							</p>
-							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
-						</figcaption>			
-					</figure>
-					<figure class="effect-zoe">
-						<img src="imageresources/a1.jpg" alt="img26"/>
-						<figcaption>
-							<h2>Creative <span>Zoe</span></h2>
-							<p class="icon-links">
-								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
-							</p>
-							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
-						</figcaption>			
-					</figure>
-					<figure class="effect-zoe">
-						<img src="imageresources/a1.jpg" alt="img26"/>
-						<figcaption>
-							<h2>Creative <span>Zoe</span></h2>
-							<p class="icon-links">
-								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
-							</p>
-							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
-						</figcaption>			
-					</figure>
-					<figure class="effect-zoe">
-						<img src="imageresources/a1.jpg" alt="img26"/>
-						<figcaption>
-							<h2>Creative <span>Zoe</span></h2>
-							<p class="icon-links">
-								<a href="#"><span class="icon-heart"></span></a>
-								<a href="#"><span class="icon-eye"></span></a>
-								<a href="#"><span class="icon-paper-clip"></span></a>
 							</p>
 							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
 						</figcaption>			
@@ -462,8 +462,7 @@ BITSMUN 2016
 <!-- contact section -->
 
 
-	</section>
-    <section id="contact-section">
+    <!-- <section id="contact-section">
 		<div class="container">
 
 		<h1 class="text-center">
@@ -480,7 +479,7 @@ BITSMUN 2016
 					</figcaption>			
 				</figure>
 				<figure class="effect-sadie col-lg-4 col-md-4 sadie">
-					<img src="imageresources/c2.png" alt="img14"/>
+					<img src="imageresources/contact/phone.jpg" alt="img14"/>
 					<figcaption>
 						<h2>Phone</h2>
 						<p>+91 00 00 000000</p>
@@ -488,7 +487,7 @@ BITSMUN 2016
 					</figcaption>			
 				</figure>
 				<figure class="effect-sadie col-lg-4 col-md-4 sadie">
-					<img src="imageresources/c3.png" alt="img14"/>
+					<img src="imageresources/contact/email.jpg" alt="img14"/>
 					<figcaption>
 						<h2>E-mail</h2>
 						<p>info@bitsmun.in</p>
@@ -497,6 +496,43 @@ BITSMUN 2016
 				</figure>
 			</div>	
 		</div>    	
+    </section> -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2><br>
+                    <!-- <h3 class="section-subheading text-muted">This can be the place for all the benefits that one can get, after joining MR - Connect.</h3> -->
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Address</h4>
+                    <p class="text-muted">BITS Pilani - K K Birla Goa Campus<br>Zuarinagar, Goa<br> Pin - 403726</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Phone</h4>
+                    <p class="text-muted">+91 77 69 926110</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">e-mail</h4>
+                    <p class="text-muted">info@bitsmun.in</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer id="footer-bg" >
@@ -519,7 +555,9 @@ BITSMUN 2016
                 	<p style="font-family: San-serif">___________________________________________________________________________________________________________</p>
                 </div>
                 <div class="col-lg-12">
-                	<img id="quark-logo" src="imageresources/quark-logo.jpg">
+                	<a href="http://www.bits-quark.org">
+                		<img id="quark-logo" src="imageresources/quark-logo.jpg"/>
+                	</a>
                 </div>
                 <div class="col-md-4">
                 	<p style="color: #FFFFFF">Copyright  &copy; BITSMUN GOA</p>
