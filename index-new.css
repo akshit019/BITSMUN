@@ -1,6 +1,28 @@
  /*for the smallest phones*/ 
         @media (max-width:767px) {
     		
+		    .about-box-first{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		/*height: 250px;*/
+        		margin-bottom: 22px;
+        		margin-left: 10%;
+        		background-color: #1e70a8;
+        		max-width: 368px;
+
+        		/*margin-right: -20px;*/
+        	}
+
+        	.about-box{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		/*height: 250px;*/
+        		margin-bottom: 22px;
+        		margin-left: 10%;
+        		background-color: #1e70a8;
+        		max-width: 368px;
+
+        		/*margin-right: -20px;*/
+
+        	}
 
 			#logo{
 		    	width: 45%;
@@ -12,6 +34,26 @@
         /*for the tablet phones*/ 
         @media (min-width:768px) {
         	
+        	.about-box-first{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		/*height: 250px;*/
+        		margin-bottom: 22px;
+        		margin-left: 25%;
+        		background-color: #1e70a8;
+        		max-width: 368px;
+        		/*margin-right: -20px;*/
+        	}
+
+        	.about-box{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		/*height: 250px;*/
+        		margin-bottom: 22px;
+        		margin-left: 25%;
+        		background-color: #1e70a8;
+        		max-width: 368px;
+
+        		/*margin-right: -20px;*/
+        	}
 
 			#logo{
 		    	width: 60%;
@@ -23,10 +65,19 @@
         /*for medium screens and desktops*/
         @media (min-width:992px) {
         	
+        	.about-box-first{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		margin-bottom: 22px;
+        		background-color: #1e70a8;
 
+       	}
 
+        	.about-box{
+        		background-color: #1e70a8;
+        		/*background-image: url(imageresources/about/a1.jpg);*/
 
-
+        	}
+			
 			#logo{
 		    	width: 50%;
 		    	margin-top: -3%;
@@ -37,7 +88,20 @@
          /*for large screens*/ 
         @media (min-width:1200px) {
     		
+        	.about-box-first{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		margin-bottom: 22px;
+        		margin-left: -3%;
+        		background-color: #1e70a8;
+        		
+        	}
 
+        	.about-box{
+        		/*background-image: url(imageresources/about/a1.jpg);*/
+        		margin-left: -3%;
+        		background-color: #1e70a8;
+        		margin-bottom: 22px;
+        	}
 
 			#logo{
 		    	width: 55%;
@@ -46,6 +110,39 @@
 		    }
 
         }
+
+
+        .about-hover-upper img {
+        	max-width: 368px;
+        	position: relative;
+        	bottom: 0px;
+        	width: auto;
+        	transition: bottom 0.4s;
+        	-webkit-transition: bottom 0.4s;
+
+        }
+
+        .about-hover-upper img:hover {
+        		position: relative;
+        		bottom: 10px;
+        	}
+
+        .about-hover-lower img {
+        	max-width: 368px;
+        	position: relative;
+        	top: 0px;
+        	width: auto;
+        	transition: top 0.4s;
+        	-webkit-transition: top 0.4s;
+
+        }
+
+        .about-hover-lower img:hover {
+        		position: relative;
+        		top: 10px;
+        	}
+
+
 
 	    video {
 			width: 100%;
@@ -91,17 +188,10 @@
 		}
 
 /*about section css*/
-.about-box{
-	/*width: 100%;*/
-	height: 250px;
-	background-color: #000000;
-	/*background-image: url(imageresources/about/1.jpg);*/
-}
 
 .about-box img {
 	position: relative;
 	/*bottom: 50px;*/
-	width: auto;
 	overflow: hidden;
 	}
 
@@ -109,11 +199,11 @@
 	background-color: rgba(0,0,0,0.5);
 }
 
-.contenthover { padding:20px 20px 10px 20px; }
+/*.contenthover { padding:20px 20px 10px 20px; }
 .contenthover, .contenthover h3, contenthover a { color:#fff; }
-.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
+.contenthover h3, .contenthover p { margin:0 0 0px 0; line-height:1.4em; padding:0; }
 .contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.contenthover a.mybutton:hover { background:#34742d }
+.contenthover a.mybutton:hover { background:#34742d }*/
 
 
 /*committees css*/
