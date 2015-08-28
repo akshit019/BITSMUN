@@ -437,6 +437,34 @@
 				url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 		}
 
+
+/*about-modals*/
+/*.modal{
+	background-color: #fff;
+	opacity: 0.5;
+}
+*/
+.modal-header{
+	background-color: #1e70a8;
+	color: #fff;
+}
+
+.modal-body{
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: left;
+}
+
+.modal-dialog{
+	width: 75%;
+}
+
+.about-goa-modal{
+	margin-top: 3%;
+	margin-left: 1%;
+	margin-bottom: 2%;
+}
+
 /*about section css*/
 
 .about-box img {
@@ -503,8 +531,8 @@
 	pointer-events: none;
 }
 
-.grid-comm figure figcaption,
-.grid-comm figure figcaption > a {
+/*.grid-comm figure figcaption,*/
+.grid-comm figure figcaption/* > a */{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -528,17 +556,19 @@
 	word-wrap: normal;
 	text-align: left;
 	margin-left: 50px;
+
 }
 
-.grid-comm figure h3 span {
+/*.grid-comm figure h3 span {
 	font-weight: 800;
 	word-wrap: normal;
 	margin-left: 50px;
-}
+}*/
 
 .grid-comm figure h3,
 .grid-comm figure p {
 	margin: 0;
+	margin-top: -1%;
 	word-wrap: normal;
 }
 
@@ -664,3 +694,22 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	text-align: justify;
 	margin-bottom: 0px;
 }
+
+.dev-pics{
+	width: 70px;
+	margin-left: -2%;
+	margin-bottom: 2%;
+}
+
+/*.dev-pic-2{
+	width: 78px;
+	margin-left: -2.5%;
+}*/
+
+.dev-name{
+	margin-left: 6%;
+}
+/*.dev-1{
+	width: 100px;
+}
+*/
