@@ -1,0 +1,199 @@
+<?php
+require_once("../models/config.php");
+require_once("./widget.php");
+//Request method: GET
+/*
+$ajax = checkRequestMode("get");
+
+if (!securePage(__FILE__)){
+    apiReturnError($ajax);
+}
+*/
+require_once("./execessay_crud.php");
+require_once("./execEssayAns_crud.php");
+require_once("./execEssayAnsTemp_crud.php");
+require_once("./info_crud.php");
+require_once("./delcouncil_crud.php");
+require_once("./execstep1_crud.php");
+
+setReferralPage(getAbsoluteDocumentPath(__FILE__));
+
+?>
+ <!DOCTYPE html>
+<html lang="en">
+  <?php
+  	echo renderAccountPageHeader(array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Edit Form"));
+  ?>
+<body>
+
+<?php
+$username = $_SESSION["currentUsername"];
+// define variables and set to empty values
+$essay1 = $essay2 = $essay3 = $essay4 = $submit = "";
+$essay = new execstep1_crud();
+$cursor = $essay->read($username);
+$t = 0;
+$lists = array();
+foreach($cursor as $doc1){
+	$lists[$t] = $doc1["firstCouncil"];
+	$t = $t + 1;
+	$lists[$t] = $doc1["secondCouncil"];
+	$t = $t + 1;
+	$lists[$t] = $doc1["thirdCouncil"];
+	$t = $t + 1;
+}
+
+$final = new delcouncil_crud();
+$list = array();
+//if(!empty($list->count())){
+	$c1 = $final->read_essay($lists[0]);
+	$q = 0;
+	foreach($c1 as $d1){
+		$list[$q] = $d1["essay"];
+	}
+	$c2 = $final->read_essay($lists[1]);
+	$q = 1;
+	foreach($c2 as $d2){
+		$list[$q] = $d2["essay"];	
+	}
+
+	$c3 = $final->read_essay($lists[2]);
+	$q = 2;
+	foreach($c3 as $d3){
+		$list[$q] = $d3["essay"];
+
+	}
+//}
+//$list[3] = "Add questioni 4";
+//$essay->add_essay("Write your First Question Here");
+//$essay->add_essay("Write your Second Question Here");
+//$essay->add_essay("Write your Third Question Here");
+
+
+$readTemp = new execEssayAnsTemp_crud();
+$read = new execEssayAns_crud();
+$cursorAns = $read->read($username);
+$cursorAnsTemp = $readTemp->read($username);
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+   $essay1 = test_input($_POST["essay0"]);
+   $essay2 = test_input($_POST["essay1"]);
+   $essay3 = test_input($_POST["essay2"]); 
+   $essay4 = test_input($_POST["essay4"]); 
+   $submit = test_input($_POST["submit"]);
+}
+
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+?>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+        <?php
+          echo renderMenu("edit_publisher");
+        ?>  
+
+      	<div id="page-wrapper">
+	  			<div class="row">
+          	<div id='display-alerts' class="col-lg-12">
+
+          	</div>
+        	</div>
+		<div class="jumbotron">
+    		<h1>Step 2 | Essay</h1>
+	 <p class="lead"><br></p>
+        <p class="lead">Please answer the following questions in less than 500 words.| Click on 'Save' to save your progress and 'Submit' when finalized.<br></p>
+	<p class="lead"><b> Once Submitted the answers cannot be edited.</b><br></p>
+	<p class="lead"><b> If it doesn't show the your saved preferences then try logging with email address or vice-versa<b><br></p>
+	</div>        
+	<div class="row">
+		  			<div class="col-lg-8">
+			<form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" >
+	
+	<?php
+		$info = new execstep1_crud();
+		$status = $info->readStatus($username);
+		if($status){
+			$variable = "";
+			if($cursorAns->count() == 0){
+				for($i = 0; $i < count($list); $i++){
+					$j = $i + 1;
+					$temp = "Essay" . $j;
+					foreach($cursorAnsTemp as $doc){
+						$variable = $doc[$temp];
+					}
+  
+					//echo "<script type='text/javascript'>alert('$variable');</script>";	
+					echo "<div class='form-group'><label class='control-label col-sm-4' for='essay".$i."'>". $list[$i] ."</label><div class='col-sm-8'><textarea input type='text' class='form-control execexp' name='essay".$i."' rows='20' id='essay".$i."' placeholder='Write your answer here' >".$variable."</textarea></div></div>";
+				}
+				$ess = "";
+				foreach($cursorAnsTemp as $doc1){
+						$ess = $doc1["Essay4"];
+					}
+				echo "<div class='form-group'><label class='control-label col-sm-4' for='essay4'>Fill in your credentials (Experience, Awards etc)</label><div class='col-sm-8'><textarea class='form-control execexp' name='essay4' rows='20' id='essay4' placeholder='Write your answer here' >".$ess."</textarea></div></div>";
+				echo "<div class='form-group'><div class='col-sm-offset-4 col-sm-8'><button type='submit' class='btn btn-lg btn-primary' id = 'save' name='submit' value='save'>Save</button>";
+				echo " <button type='submit' class='btn btn-lg btn-success' id = 'submit' name='submit' value='submit' onclick='return confirm('Are you sure?');'>Submit</button>";
+				echo "</div></div>";	
+			}
+			else if($cursorAns->count() != 0){
+				for($i = 0; $i < count($list); $i++){
+					$j = $i + 1;
+					$temp = "Essay" . $j;
+					foreach($cursorAns as $doc){
+						$variable = $doc[$temp];
+					}
+					//echo "<script type='text/javascript'>alert('$variable');</script>";	
+					echo "<div class='form-group'><label class='control-label col-sm-4' for='essay".$i."'>". $list[$i] ."</label><div class='col-sm-8'><textarea input type='text' class='form-control execexp' name='essay".$i."' rows='20' id='essay".$i."' placeholder='Write your answer here' required readonly>".$variable."</textarea></div></div>";
+				}
+				$ess = "";
+				foreach($cursorAns as $doc1){
+						$ess = $doc1["Essay4"];
+					}
+				echo "<div class='form-group'><label class='control-label col-sm-4' for='essay4'>Fill in your credentials (Experience, Awards etc)</label><div class='col-sm-8'><textarea class='form-control execexp' name='essay4' rows='20' id='essay4' placeholder='Write your answer here' required readonly>".$ess."</textarea></div></div>";
+			}
+		}else{
+			echo "<div class='form-group'><label class='control-label col-sm-12' for=''>PLEASE FIRST SUBMIT YOUR STEP 1 FORM OF EXECUTIVE BOARD APPLICATION IN ORDER TO PROCEED:</label><div class='col-sm-8'>";
+		}
+	?>  
+  </form>
+  </div>   
+  </div>
+</div></div>
+
+
+<?php
+if($submit == "submit"){	 
+	$crud = new execEssayAns_crud();
+	$crud->insert($username,$essay1,$essay2,$essay3,$essay4);
+	$location = htmlspecialchars($_SERVER['PHP_SELF']);
+echo '<META HTTP-EQUIV="Refresh" Content="0; URL='.$location.'">';
+exit; 
+}
+if($submit == "save"){	 
+	$crud = new execEssayAnsTemp_crud();
+	$crud->insert($username,$essay1,$essay2,$essay3,$essay4);
+	$location = htmlspecialchars($_SERVER['PHP_SELF']);
+echo '<META HTTP-EQUIV="Refresh" Content="0; URL='.$location.'">';
+exit; 
+}
+
+
+
+?>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+<?php
+require_once("../models/config.php");
+require_once("./widget.php");
+Request method: GET
+
+$ajax = checkRequestMode("get");
+*
+if (!securePage(__FILE__)){
+    apiReturnError($ajax);
+/
+
+require_once("./info_crud.php");
+
+setReferralPage(getAbsoluteDocumentPath(__FILE__));
+
+?>
+ <!DOCTYPE html>
+<html lang="en">
+  <?php
+  	echo renderAccountPageHeader(array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Edit Form"));
+  ?>
+<body>
+
+<?php
+$status = false;
+$username = $_SESSION['currentUsername'];
+$info_crud = new info_crud();
+$cursor = $info_crud->read($username);
+if($cursor->count() == 0){
+	$name = $email = $ccode = $phone= $institute = $nofmun = $sex ="";
+}
+else{
+	foreach($cursor as $doc){
+		$name = $doc['name'];
+		$email = $doc['email'];
+		$ccode = $doc['countryCode'];
+		$phone = $doc['phoneNumber'];
+		$institute = $doc['institute'];
+		$nofmun = $doc['nofmun'];
+    $sex = $doc['sex'];
+	}
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   
+   $name = test_input($_POST["name"]);
+   $email = test_input($_POST["email"]);
+   $ccode = test_input($_POST["ccode"]);
+   $phone = test_input($_POST["phone"]);
+   $institute = test_input($_POST["institue"]);
+   $nofmun = test_input($_POST["nofmun"]);
+   $sex = test_input($_POST["sex"]);
+   $status = true;
+}
+  
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
+?>
+
+  <div id="wrapper">
+
+      <!-- Sidebar -->
+        <?php
+          echo renderMenu("edit_publisher");
+        ?>  
+      	<div id="page-wrapper">
+	  			<div class="row">
+          	<div id='display-alerts' class="col-lg-12">
+		
+          	</div>
+        	</div>
+		<div class="jumbotron">
+    		<h1>Participant information form</h1>
+        <p class="lead">Fill in your credentials.<br></p>
+        	</div>
+	<div class="row">		  			
+	<div class="col-lg-6">
+			<form class="form-horizontal" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" >
+	
+	 <div class="form-group">
+    <label class="control-label col-sm-4" for="username">Username:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="username" name="username" value=<?php echo $_SESSION['currentUsername']; ?> readonly="">
+    </div>
+  </div>
+
+	<div class="form-group">
+    <label class="control-label col-sm-4" for="name">Name:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" value="<?php echo $name ?>" required>
+     </div>
+  </div>
+  
+	<div class="form-group">
+    <label class="control-label col-sm-4" for="email">E-mail:</label>
+    <div class="col-sm-8">
+      <input type="email" name = "email" class="form-control" id="email" name="email" placeholder="Enter Your Email Address" value="<?php echo $email ?>"  required>
+    </div>
+  </div>
+
+	<div class="form-group">
+    <label class="control-label col-sm-4" for="phoneNumber">Phone Number:</label>
+    <div class="col-sm-2 input-group">
+	 <div class="input-group-addon ">+</div>
+      <input type="phone" name = "ccode" class="form-control" id="ccode" name="ccode" placeholder="" value="<?php echo $ccode ?>"  required>
+    </div>
+   <div class="col-sm-4">
+      <input type="phone" name = "phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number" value="<?php echo $phone ?>"  required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="sex">Sex:</label>
+    <div class="col-sm-8">
+      <input type="radio" name = "sex" id="sex" name="sex" value="male" required <?php echo ($sex=='male')?'checked':'' ?> >Male
+      <br>
+      <input type="radio" name = "sex"  id="sex" name="sex"  value="female" required <?php echo ($sex=='female')?'checked':'' ?> >Female
+      <br>
+      <input type="radio" name = "sex"  id="sex" name="sex"  value="other" required <?php echo ($sex=='other')?'checked':'' ?> >Other
+    </div>
+  </div>
+
+	<div class="form-group">
+    <label class="control-label col-sm-4" for="institue">Name Of Your Institute:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="institue" name="institue" placeholder="Enter Your Insititute Name" value="<?php echo $institute ?>"  required>
+     </div>
+  </div>
+
+	<div class="form-group">
+    <label class="control-label col-sm-4" for="nofmun">Number Of MUNs Attended:</label>
+    <div class="col-sm-8">
+      <input type="number" class="form-control" id="nofmun" name="nofmun" min="0" max="99" placeholder="" value="<?php echo $nofmun ?>"  required>
+     </div>
+  </div>
+
+   <div class="form-group"> 
+    <div class="col-sm-offset-4 col-sm-8">
+      <button type="submit" class="btn btn-lg btn-primary" name="submit" value="Submit">Submit</button>
+    </div>
+  </div>
+  </form>
+  </div>   
+  </div>
+</div></div>
+
+<?php
+if($status){
+	$info_crud = new info_crud();
+	$info_crud->insert($username, $name,$email, $ccode, $phone,$sex,$institute,$nofmun,true);
+}
+?>
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+</body>
+</html>
+
