@@ -209,8 +209,8 @@
             </div>
             <a href="#application" class="page-scroll">
                 <div id="button-register">
-                <button class="btn btn-xl btn-primary">
-                    Apply/Pay Now
+                <button class="btn btn-xl btn-primary btn-adjust">
+                    <div class="btn-label">Apply/Pay Now</div>
                 </button>
             </div>
             </a>
@@ -534,7 +534,16 @@ COMING SOON
                  					<br><br><b>Agenda:<br></b>
                  					The Europian Migration Crisis and rights of refugees migrating from conflict zones.
                 					<br><br><b>Round 1 Allotments:</b><br>
-                 					<a href="notices/UNHRC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for UNHRC</a>
+                 					<a href="notices/r1/UNHRC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for UNHRC</a>
+
+                                    <br><br><b>Round 2 Allotments:</b><br>
+                                    <a href="notices/r2/UNHRC_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for UNHRC</a>
+
+                                    <br><br><b>Round 3 Allotments:</b><br>
+                                    <a href="notices/r3/UNHRC_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for UNHRC</a>
+
+                                    <br><br><b>Round 4 Allotments:</b><br>
+                                    <a href="notices/r4/UNHRC_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for UNHRC</a>
                 				</div>
                  
                                 <div class="modal-footer">
@@ -637,7 +646,16 @@ COMING SOON
                                 <br><br><b>Agenda:<br></b>
                                 The Fissil Material Cutoff Treaty.
                                 <br><br><b>Round 1 Allotments:</b><br>
-                 				<a href="notices/DISEC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for DISEC</a>
+                 				<a href="notices/r1/DISEC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for DISEC</a>
+
+                                <br><br><b>Round 2 Allotments:</b><br>
+                                <a href="notices/r2/DISEC_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for DISEC</a>
+
+                                <br><br><b>Round 3 Allotments:</b><br>
+                                <a href="notices/r3/DISEC_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for DISEC</a>
+
+                                <br><br><b>Round 4 Allotments:</b><br>
+                                <a href="notices/r4/DISEC_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for DISEC</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -673,7 +691,16 @@ COMING SOON
 									<br><br><b>Agenda:<br></b>
 									Revaluation of Progress on the Millennium Development Goals on Health with emphasis to Disease epidemic control and infant mortality.
 									<br><br><b>Round 1 Allotments:</b><br>
-                 					<a href="notices/WHO_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for WHO</a>
+                 					<a href="notices/r1/WHO_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for WHO</a>
+
+                                    <br><br><b>Round 2 Allotments:</b><br>
+                                    <a href="notices/r2/WHO_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for WHO</a>
+
+                                    <br><br><b>Round 3 Allotments:</b><br>
+                                    <a href="notices/r3/WHO_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for WHO</a>
+
+                                    <br><br><b>Round 4 Allotments:</b><br>
+                                    <a href="notices/r4/WHO_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for WHO</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -709,8 +736,16 @@ COMING SOON
 									<br><br><b>Agenda:<br></b>
 									The Greek financial crisis and the social effects of IMF's bailout package on Greece-EU relations.
 									<br><br><b>Round 1 Allotments:</b><br>
-                 					<a href="notices/ECOSOC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for ECOSOC</a>
+                 					<a href="notices/r1/ECOSOC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for ECOSOC</a>
 
+                                    <br><br><b>Round 2 Allotments:</b><br>
+                                    <a href="notices/r2/ECOSOC_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for ECOSOC</a>
+
+                                    <br><br><b>Round 3 Allotments:</b><br>
+                                    <a href="notices/r3/ECOSOC_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for ECOSOC</a>
+
+                                    <br><br><b>Round 4 Allotments:</b><br>
+                                    <a href="notices/r4/ECOSOC_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for ECOSOC</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -747,7 +782,16 @@ COMING SOON
 									<br><br><b>Agenda:<br></b>
 									The Third battle of Panipat.
 									<br><br><b>Round 1 Allotments:</b><br>
-                 					<a href="notices/HCC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for HCC</a>
+                 					<a href="notices/r1/HCC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for HCC</a>
+
+                                    <br><br><b>Round 2 Allotments:</b><br>
+                                    <a href="notices/r2/HCC_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for HCC</a>
+
+                                    <br><br><b>Round 3 Allotments:</b><br>
+                                    <a href="notices/r3/HCC_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for HCC</a>
+
+                                    <br><br><b>Round 4 Allotments:</b><br>
+                                    <a href="notices/r4/HCC_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for HCC</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -784,7 +828,16 @@ COMING SOON
 									<br><br><b>Agenda:<br></b>
 									The ongoing offensive against ISIL, with special focus on parallel NATO/SEO intervention.
 									<br><br><b>Round 1 Allotments:</b><br>
-                 					<a href="notices/JCC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for JCC</a>
+                 					<a href="notices/r1/JCC_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for JCC</a>
+
+                                    <br><br><b>Round 2 Allotments:</b><br>
+                                    <a href="notices/r2/JCC_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for JCC</a>
+
+                                    <br><br><b>Round 3 Allotments:</b><br>
+                                    <a href="notices/r3/JCC_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for JCC</a>
+
+                                    <br><br><b>Round 4 Allotments:</b><br>
+                                    <a href="notices/r4/JCC_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for JCC</a>
 									</div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -826,7 +879,16 @@ COMING SOON
 								<br><br><b>Agenda:<br></b>
 								Re-evaluating the allotment process of the world cup hosting rights, in the backdrop of the Qatari world cup bid.
 								<br><br><b>Round 1 Allotments:</b><br>
-                 				<a href="notices/FIFA_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for FIFA</a>
+                 				<a href="notices/r1/FIFA_R1_allotments.pdf" target="_blank">Click here to see Round 1 Allotments for FIFA</a>
+
+                                <br><br><b>Round 2 Allotments:</b><br>
+                                <a href="notices/r2/FIFA_R2_allotments.pdf" target="_blank">Click here to see Round 2 Allotments for FIFA</a>
+
+                                <br><br><b>Round 3 Allotments:</b><br>
+                                <a href="notices/r3/FIFA_R3_allotments.pdf" target="_blank">Click here to see Round 3 Allotments for FIFA</a>
+
+                                <br><br><b>Round 4 Allotments:</b><br>
+                                <a href="notices/r4/FIFA_R4_allotments.pdf" target="_blank">Click here to see Round 4 Allotments for FIFA</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -857,6 +919,8 @@ COMING SOON
                                 </div>
                                 <div class="modal-body">
                                    The International Press Team plays a special role during the conference, making sure the delegates are always up-to-date with the current events and proceedings in all the different committees and that the records of intensive negotiations and debates are reported, which is an essential part of conference experience at MUNs. 
+                                    <br><br><b>IP Allotments:</b><br>
+                                    International Press allotments will be releasing soon. Stay Tuned.
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -1090,30 +1154,67 @@ COMING SOON
                     <h2 class="section-heading">Application/Payment</h2><br><br>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <a href="index-delegate.php">
-                    <div class="col-lg-6">
-                    <button type="button" class="btn btn-xl btn-default" style="width:90%; margin-left:5%;">As a Delegate</button>
+        <div class="container">
+            <div class="row text-center row-centered">
+                <div class="col-sm-3 col-centered">
+                    <div class="apply">
+                        <a href="index-delegate.php">
+                            <div class="apply-circle">
+                                <i class="fa fa-users fa-4x apply-icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="apply-label">Delegate Application</h4>
                 </div>
-                </a>
-                <a href="ip.php">
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-xl btn-default" style="width:90%; margin-top:2px; margin-left:2%;">As an International Press</button>
-                </div>
-                </a>
-                <div class="col-lg-12">
-                	
+
+                <div class="col-sm-3 col-centered">
+                    <div class="apply">
+                        <a href="ip.php">
+                            <div class="apply-circle">
+                                <i class="fa fa-camera fa-4x apply-icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="apply-label">IP Application</h4>
                 </div>
                 
-                <div class="row">
+                <div class="col-sm-3 col-centered">
+                	<div class="apply">
+                        <a href="#pay-link-modal" data-toggle="modal" data-target="#pay-link-modal">
+                            <div class="apply-circle">
+                                <i class="fa fa-credit-card fa-4x apply-icon"></i>
+                            </div>
+                        </a>
+                           
+                    </div>
+                    <h4 class="apply-label">Registration Payment</h4>
+                </div>
+
+                <div class="col-sm-3 col-centered">
+                    <div class="apply">
+                        <a href="#acco-link-modal" data-toggle="modal" data-target="#acco-link-modal">
+                            <div class="apply-circle">
+                                <i class="fa fa-home fa-4x apply-icon"></i>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <h4 class="apply-label">Accommodation Payment</h4>
+                </div>
+
+            </div>
+        </div>                
+                
+                <!-- <div class="row"> -->
                     
                     
-                    	<div class="col-lg-12 text-center" id="pay-link">
+                    	<!-- <div class="col-lg-12 text-center" id="pay-link">
                     	<a href="#pay-link-modal" data-toggle="modal" data-target="#pay-link-modal">
                     	<button type="button" class="btn btn-xl btn-default" style="width:70%; margin-top:4%;">Registration Payment</button>
                 		</a>
-                		</div>
+                		</div> -->
                 	
 
                 	 <div class="modal fade landing-modal" role="dialog" id="pay-link-modal">
@@ -1139,7 +1240,7 @@ COMING SOON
                                 </ol><br>
                                 Once the payment is successfully submitted, make a note of the tranction id and save the screenshot/printout of the transaction ticket.
                                 <p style="color: red;"><b><i>Please note that once paid, the fee will not be refunded under any circumstances. Delegates are requested to confirm their allotments before paying. Delegates should also ensure that the payment should be 1600 INR.</i></b></p>
-                                <p style="color: red;"><b><i>Deadline Extended:<br>Deadline to pay for Round 1 Allotments is 15th December, 2015</i></b></p>
+                                <p style="color: red;"><b><i>Deadline to pay for Round 4 Allotments is 21st January, 2016</i></b></p>
                                 <!-- <a href="notices/payment.pdf" target="_blank">
                                 	See Instructions
                                 </a> -->
@@ -1156,13 +1257,57 @@ COMING SOON
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </div>
+                    <div class="modal fade landing-modal" role="dialog" id="acco-link-modal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" style="background-color: #fff">
+                                <div class="modal-header text-center">
+                                    <h3>Accommodation Details and Payment</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <b>Accommodation details:</b><br><br>
+                                    <ul>
+                                        <li>Accommodation will be provided to delegates attending the conference and will be from <b>4th Feb to 7th Feb, 2016</b> (4 day 3 nights).</li>
+                                        <li>Price for <b>AC accommodation</b> is <b>INR 2100 for 4 days and 3 nights</b> in which <b>travel of delegates</b> from accommodation to conference venue and vice versa are included with <b>free breakfast and lunch</b>.</li>
+                                        <li>Price for <b>Non-Ac accommodation</b> is <b>INR 1700 for 4 days and 3 nights</b> in which <b>travel of delegates</b> from accommodation to conference venue and vice versa are included with <b>free breakfast and lunch</b>.</li>
+                                        <li>Accommodation for staying an <b>extra day</b> will be concerned on the spot based on the availability of rooms on that date.</li>
+                                        <li>Occupancy is 3 persons per room.</li>
+                                        <li>Location of accommodation will be either Bogmallo or Vasco.</li><br>
+                                    </ul>
+                                    
+                                    <b>The payment process is as follows:</b><br><br>
+                                    <ol>
+                                        <li>Select "State of Corporate/Institution" as <b>Goa</b>.</li>
+                                        <li>Select "Type of Corporate/Institution" as <b>Educational Institutions</b>.</li>
+                                        <li>Click on <b>Go</b>.</li>
+                                        <li>Select "Educational Institutions Name" as <b>Birla Institute Of Technology and Science</b>.</li>
+                                        <li>Press Submit.</li>
+                                        <li>Select "Payment Category" as <b>BITSMUN Accommodation</b>.</li>
+                                        <li>Fill up the form and enter amount as <b>2100 (for AC accommodation)/1700 (for Non-AC accommodation)</b>.</li>
+                                        <li>Please note: Enter the name of your College <b>'space'</b> city instead of <b>','</b>(comma) in the <b>'Name of the College, City'</b> tab.</li>
+                                        <li>Press Submit and pay using the <b>options</b> available.</li>
+                                    </ol>
+                                    Once the payment is successfully submitted, make a note of the tranction ID and save the screenshot/printout of the transaction ticket.
+                                    <p style="color: red;"><b><i>Please note that once paid, the fee will not be refunded under any circumstances. Delegates should also ensure that the payment should be 2100 INR for AC accommodation and 1700 INR for Non-Ac accommodation. Payment with any other amount will not be refunded.</i></b></p>
+                                
+                                    <div class="text-center">
+                                        <a href="https://www.onlinesbi.com/prelogin/institutiontypedisplay.htm" target="_blank">
+                                            <button type="button" class="btn btn-xl btn-default" style="width:70%; margin-top:4%;">Click here to pay</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- </div> -->
+
 
     </section>
         
-    <section id="associations" class="bg-light-gray" >
+    <section id="associations" class="bg-light-gray" sm-hidden >
     	<div class="container">
     	<div class="row">
     		<div class="col-lg-12 text-center">
@@ -1172,7 +1317,7 @@ COMING SOON
 			<div id = "association-carousel" class = "carousel slide">
 			   
 			   <!-- Carousel indicators -->
-			   <ol class = "carousel-indicators" style="margin-bottom:-5%;">
+			   <ol class = "carousel-indicators" style="margin-bottom:-7%;">
 			      <li data-target = "#association-carousel" data-slide-to = "0" class = "active" style="background-color: #1e70a8;"></li>
 			      <li data-target = "#association-carousel" data-slide-to = "1" style="background-color: #1e70a8;"></li>
 			      <!-- <li data-target = "#association-carousel" data-slide-to = "2"></li> -->
@@ -1213,7 +1358,9 @@ COMING SOON
 				        	</a>
 				        </div>
 				        <div class="col-lg-4">
-				        	<!-- <img src = "imageresources/comm/unhrc-icon.png" alt = "Second slide"> -->
+				        	<a href="http://www.amunc.net/">
+                                <img src = "imageresources/associations/amun.png" alt = "Second slide">               
+                            </a>
 				        </div>
 			      </div>
 			   </div>
@@ -1258,7 +1405,7 @@ COMING SOON
                         <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">e-mail</h4>
-                    <p class="text-muted">info@bitsmun.in</p>
+                    <p class="text-muted">bitsmungoa@gmail.com</p>
                 </div>
             </div>
         </div>

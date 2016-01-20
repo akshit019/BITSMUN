@@ -1,11 +1,24 @@
  /*for the smallest phones*/ 
         @media (max-width:767px) {
     		
+		   /* .btn-adjust{
+		    	margin-left: -3%;
+		    	width: 70%;
+		    	height: 20%;
+		    }
+
+		    .btn-label{
+		    	font-size: 8px;
+		    	margin-top: -10px;
+		    	/*margin-left: -35px;
+		    }
+*/
+
 		    .about-box-first{
         		/*background-image: url(imageresources/about/a1.jpg);*/
         		/*height: 250px;*/
         		margin-bottom: 22px;
-        		margin-left: 10%;
+        		margin-left: 20%;
         		background-color: #1e70a8;
         		max-width: 368px;
 
@@ -16,13 +29,14 @@
         		/*background-image: url(imageresources/about/a1.jpg);*/
         		/*height: 250px;*/
         		margin-bottom: 22px;
-        		margin-left: 10%;
+        		margin-left: 20%;
         		background-color: #1e70a8;
         		max-width: 368px;
 
         		/*margin-right: -20px;*/
 
         	}
+
 
 			#logo{
 		    	width: 30%;
@@ -33,16 +47,16 @@
 		    .video-image{
 	    	position: absolute;
 	    	z-index: 1;
-	    	margin-top: 10%;
-	    	margin-left: 50%;
-	    	width: 30%;
+	    	margin-top: 12%;
+	    	margin-left: 64%;
+	    	width: 28%;
 	    }
 
 
 		    .video-text-1{
 	    	position: absolute;
 	    	z-index: 1;
-	    	font-size: 15px;
+	    	font-size: 20px;
 	    	text-align: center;
 	    	color: #1e70a8;
 	    	margin-top: 15%;
@@ -53,7 +67,7 @@
 	    .video-text-2{
 	    	position: absolute;
 	    	z-index: 1;
-	    	font-size: 15px;
+	    	font-size: 20px;
 	    	text-align: center;
 	    	color: #515353;
 	    	margin-top: 19%;
@@ -64,7 +78,7 @@
 	    .video-text-3{
 	    	position: absolute;
 	    	z-index: 1;
-	    	font-size: 8px;
+	    	font-size: 10px;
 	    	text-align: center;
 	    	color: #515353;
 	    	margin-top: 25%;
@@ -75,7 +89,7 @@
 	    .video-text-4{
 	    	position: absolute;
 	    	z-index: 1;
-	    	font-size: 8px;
+	    	font-size: 10px;
 	    	text-align: center;
 	    	color: #515353;
 	    	margin-top: 27.5%;
@@ -89,8 +103,13 @@
 	    	font-size: 20px;
 	    	color: #fff;
 	    	margin-top: 32%;
-	    	margin-left: 15%;
+	    	margin-left: 14%;
+	    	/*width: 50%;*/
 	    }
+
+	    .apply{
+			margin-left: 33.3%;
+		}
 
 	    
 
@@ -187,6 +206,11 @@
 	    	margin-top: 32%;
 	    	margin-left: 13.5%;
 	    }
+
+	    .apply{
+			margin-left: -10%;
+		}
+
         }
 
         /*for medium screens and desktops*/
@@ -272,6 +296,10 @@
 	    	margin-top: 32%;
 	    	margin-left: 7%;
 	    }
+
+	    .apply{
+			margin-left: 5%;
+		}	    
 
         }
 
@@ -360,6 +388,10 @@
 	    	margin-left: 9%;
 	    }
 
+	    .apply{
+			margin-left: 10%;
+		}	    
+
         }
 
         /*loading css*/
@@ -372,18 +404,30 @@ h1 {
     color: #EEEEEE;
 }
 
-/*#preloader{
-	background-color: #fff;
-	height: 1600px;
-	width: 100%;
-	opacity: 1;
+
+
+.apply-circle{
+	height: 200px;
+	width: 200px;
+	background-color: #1e70a8;
+	border-radius: 50%;
+	/*margin-left: 9%;
+	margin-bottom: 2%;
+	padding: 5px;*/
+	float: center;
+	margin-left: 0;
 }
 
-#loading{
-  left: 47%;
-  position: absolute;
-  top: 45%;
-}    */
+.apply-icon{
+	color: #fff;
+	margin-top: 35%;
+	/*margin-left: 3%;*/
+}
+
+.apply-label{
+	margin-top: 25px;
+}
+
 
 
 #preloader {
